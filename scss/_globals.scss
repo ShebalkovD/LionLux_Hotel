@@ -45,6 +45,8 @@ $m_section: 3.75rem;
 html, body{
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
+    line-height: normal;
+    color: $color_secondary;
 }
 
 .container{
@@ -52,6 +54,18 @@ html, body{
     margin: 0 auto;
     padding: 0 5px;
 }
+
+.section_title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color_title;
+}
+
+section{
+    margin-top: 3.75rem;
+}
+
+// filter: invert(6%) sepia(7%) saturate(6012%) hue-rotate(192deg) brightness(91%) contrast(106%);
 
 
 

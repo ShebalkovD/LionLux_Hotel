@@ -143,12 +143,24 @@ html {
 html, body {
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
+  line-height: normal;
+  color: #03081A;
 }
 
 .container {
   max-width: 98%;
   margin: 0 auto;
   padding: 0 5px;
+}
+
+.section_title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: linear-gradient(#03081A, #091A56);
+}
+
+section {
+  margin-top: 3.75rem;
 }
 
 @-webkit-keyframes headerArrow {
@@ -306,4 +318,188 @@ html, body {
 }
 .nav #burger-btn {
   margin-left: 1rem;
+}
+
+.about-img {
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+.about-text {
+  margin-top: 1.5rem;
+}
+
+.cards_wrapper {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 7.8125rem;
+  margin-bottom: 2.25rem;
+  color: #000;
+  line-height: normal;
+}
+.card-img {
+  width: 50%;
+  height: 100%;
+  min-width: 1rem;
+  min-height: 7.8123rem;
+  background-image: url("/img/card-placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem 0 0 0.8rem;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.card_inner {
+  text-align: left;
+  max-width: 50%;
+  margin-left: 1rem;
+  overflow-y: hidden;
+  padding-bottom: 0.4rem;
+  max-height: 92%;
+}
+.card_inner-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.card_inner-text {
+  max-width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.card:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.card:nth-child(2n) .card-img {
+  border-radius: 0 0.8rem 0.8rem 0;
+  margin-left: 1rem;
+}
+.card:nth-child(2n) .card_inner {
+  margin-left: 0;
+}
+
+.footer {
+  margin-top: 3.75rem;
+  padding-top: 3.75rem;
+  padding-bottom: 1rem;
+  background-color: #03081A;
+  color: #fff;
+}
+.footer_inner-logo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.footer_inner_menu {
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.footer_inner_menu-item {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer_info {
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.footer_info-item {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footer_info-item span {
+  font-weight: 400;
+}
+.footer-line {
+  height: 1px;
+  width: 6.25rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-color: #fff;
+}
+.footer_btn {
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  width: 19rem;
+  height: 3.75rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 100%;
+  color: #03081A;
+  -webkit-box-shadow: 0px 1px 42px 0px rgba(0, 172, 209, 0.25);
+          box-shadow: 0px 1px 42px 0px rgba(0, 172, 209, 0.25);
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_btn-img {
+  height: 1.75rem;
+  margin-right: 1.5rem;
+}
+.footer-policy {
+  font-weight: 300;
+  font-size: 0.75rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 4rem;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
