@@ -1,0 +1,14 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="clock_svgrepo.com" clip-path="url(#clip0_89_222)">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M2.16699 13.0001C2.16699 7.01699 7.01724 2.16675 13.0003 2.16675C18.9834 2.16675 23.8337 7.01699 23.8337 13.0001C23.8337 18.9831 18.9834 23.8334 13.0003 23.8334C7.01724 23.8334 2.16699 18.9831 2.16699 13.0001ZM17.1518 15.7677C16.8198 16.2655 16.1472 16.4 15.6494 16.0682L12.8325 14.1902C12.2605 13.8089 11.917 13.167 11.917 12.4796V12.4584V7.58342C11.917 6.98511 12.402 6.50008 13.0003 6.50008C13.5987 6.50008 14.0837 6.98511 14.0837 7.58342V12.4203L16.8513 14.2653C17.349 14.5972 17.4836 15.2699 17.1518 15.7677Z" fill="url(#paint0_linear_89_222)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_89_222" x1="-1.89551" y1="0.812581" x2="21.1253" y2="23.8334" gradientUnits="userSpaceOnUse">
+<stop stop-color="#12266D"/>
+<stop offset="1" stop-color="#00D1FF"/>
+</linearGradient>
+<clipPath id="clip0_89_222">
+<rect width="26" height="26" fill="white"/>
+</clipPath>
+</defs>
+</svg>

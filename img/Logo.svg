@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo">
+<path id="Top-left" d="M9.45454 1H1V23.6364H2.09091V14.5H9.45454V1Z" fill="#E3E1E1" stroke="#E3E1E1"/>
+<path id="Top-right" d="M31.0002 1H18.182V2.90909H25.2729V14.3636H31.0002V1Z" fill="#E3E1E1" stroke="#E3E1E1"/>
+<path id="Middle-left" d="M12.1818 25.0002V3.59106H14.9091V27.7274H1.27271L2.90907 25.0002H12.1818Z" fill="#E3E1E1" stroke="#E3E1E1"/>
+<path id="Middle-right" d="M19.818 11.0911H17.0907V27.7274H30.7271L28.9543 25.0002H19.818V11.0911Z" fill="#E3E1E1" stroke="#E3E1E1"/>
+<path id="Bottom" d="M2.09091 29.0911H1V31.0002H31V30.182H2.09091V29.0911Z" fill="#E3E1E1" stroke="#E3E1E1"/>
+</g>
+</svg>

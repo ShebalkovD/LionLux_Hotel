@@ -1,0 +1,57 @@
+//шрифты
+@font-face {
+    font-weight: 300; 
+    font-family: Fira Sans;
+    src: url("../fonts/FiraSans-Light.ttf");
+}
+@font-face {
+    font-weight: 400; 
+    font-family: Fira Sans;
+    src: url("../fonts/FiraSans-Regular.ttf");
+}
+@font-face {
+    font-weight: 500; 
+    font-family: Fira Sans;
+    src: url("../fonts/FiraSans-Medium.ttf");
+}
+@font-face {
+    font-weight: 700; 
+    font-family: Fira Sans;
+    src: url("../fonts/FiraSans-Bold.ttf");
+}
+
+//цвета
+$color_secondary: #03081A;
+$color_accent: #00A3FF;
+$color_btn: linear-gradient(#030A22, #092381);
+$color_title: linear-gradient(#03081A, #091A56);
+
+//отступы
+$m_section: 3.75rem;
+
+//шаблон кнопки
+@mixin btn($w, $h, $rad, $p){
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    width: $w;
+    height:$h;
+    border-radius: $rad;
+    padding: $p;
+
+}
+
+html, body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+
+
