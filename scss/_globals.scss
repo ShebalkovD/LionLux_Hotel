@@ -53,6 +53,7 @@ html, body{
     max-width: 98%;
     margin: 0 auto;
     padding: 0 5px;
+    position: relative;
 }
 
 .section_title{
@@ -65,7 +66,13 @@ section{
     margin-top: 3.75rem;
 }
 
-// filter: invert(6%) sepia(7%) saturate(6012%) hue-rotate(192deg) brightness(91%) contrast(106%);
-
+.scrolltrigger{
+    position: absolute;
+    top: 50vh;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 10px;
+}
 
 
