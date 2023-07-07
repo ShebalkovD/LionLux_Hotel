@@ -259,7 +259,7 @@ section {
 
 .header {
   min-height: 100vh;
-  background-image: url("/img/header-bg.png");
+  background-image: url("img/header-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,7 +279,7 @@ section {
   background: linear-gradient(180deg, #101011 5.73%, rgba(16, 16, 17, 0) 100%);
 }
 .header::after {
-  content: url("/img/header-arrow.svg");
+  content: url("img/header-arrow.svg");
   display: block;
   position: absolute;
   bottom: 2.5rem;
@@ -365,7 +365,7 @@ section {
 }
 .nav-phone::after {
   content: " ";
-  background-image: url("/img/phone-animation-white.svg");
+  background-image: url("img/phone-animation-white.svg");
   background-size: cover;
   position: absolute;
   display: block;
@@ -451,7 +451,7 @@ section {
   height: 100%;
   min-width: 1rem;
   min-height: 7.8123rem;
-  background-image: url("/img/card-placeholder.jpg");
+  background-image: url("img/card-placeholder.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0.8rem 0 0 0.8rem;
