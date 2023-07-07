@@ -73,7 +73,8 @@
    align-items: center;
    }
    &-logo svg{
-    height: 2rem;
+    display: block;
+   
    }
   
     
@@ -276,9 +277,11 @@
         text-align: left;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding-right: 2.5rem;
         &-img{
             height: 1.75rem;
-            margin-right: 1.5rem;
+           
         }
 
     }
@@ -294,4 +297,7 @@
         
     }
 }
+
+
+@import "_adaptive.scss";
 

@@ -190,9 +190,9 @@ section {
   background: rgba(0, 0, 0, 0.51);
   z-index: 4;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .shadow-active {
   visibility: visible;
@@ -257,9 +257,9 @@ section {
   -webkit-transform: translateY(-1rem);
       -ms-transform: translateY(-1rem);
           transform: translateY(-1rem);
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .services_menu-active {
   visibility: visible;
@@ -270,6 +270,11 @@ section {
 }
 .services_menu a {
   letter-spacing: 0.075rem;
+}
+.services_menu a img {
+  -webkit-transform: translateY(-0.125rem);
+      -ms-transform: translateY(-0.125rem);
+          transform: translateY(-0.125rem);
 }
 .services_menu-item {
   padding: 0;
@@ -401,7 +406,7 @@ section {
           align-items: center;
 }
 .nav-logo svg {
-  height: 2rem;
+  display: block;
 }
 .nav button {
   background-color: transparent;
@@ -632,10 +637,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 2.5rem;
 }
 .footer_btn-img {
   height: 1.75rem;
-  margin-right: 1.5rem;
 }
 .footer-policy {
   font-weight: 300;
@@ -648,4 +656,10 @@ section {
   width: -moz-fit-content;
   width: fit-content;
   opacity: 0.4;
+}
+
+@media (max-width: 320px) {
+  html, body {
+    font-size: 14px;
+  }
 }

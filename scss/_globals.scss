@@ -89,7 +89,7 @@ section{
     background: rgba(0, 0, 0, 0.51);
     z-index: 4;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &-active{
         visibility: visible;
         opacity: 1;
