@@ -1,6 +1,7 @@
 @import "_nullstyle.scss"; //обнуление стилей
 @import "_globals.scss"; //глобальные стили и переменные
 @import "_animations.scss";//анимации
+@import "_servicesMenu.scss"; // меню услуг
 
 .header{
     min-height: 100vh;
@@ -289,8 +290,8 @@
         margin-top: 4rem;
         text-align: center;
         width: fit-content;
+        opacity: 0.4;
         
     }
-    //починить размеры svg в nav
 }
 
