@@ -1,11 +1,12 @@
 @keyframes headerArrow {
     0%{
-        transform: translateY(0);
+        transform: translate(-50%, 0);
+        
     }
     50%{
-        transform: translateY(0.5rem);
+        transform: translate(-50%, 0.5rem);
     }
     100%{
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
 }

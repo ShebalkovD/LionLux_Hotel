@@ -2,6 +2,8 @@
 @import "_globals.scss"; //глобальные стили и переменные
 @import "_animations.scss";//анимации
 @import "_servicesMenu.scss"; // меню услуг
+@import "_mobileMenu.scss"; // Мобильное меню
+
 
 .header{
     min-height: 100vh;
@@ -28,7 +30,6 @@
         position: absolute;
         bottom: 3.5rem;
         left: 50%;
-        
         animation: 2s infinite ease-in-out headerArrow;
 
     }
@@ -63,7 +64,7 @@
    left: 0;
    width: 100%;
    z-index: 3;
-   transition: all 0.5s ease-in-out;
+   transition: all 0.2s ease-in-out;
   
    
    &_wrapper{

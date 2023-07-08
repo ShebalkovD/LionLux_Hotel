@@ -25,6 +25,7 @@ $color_secondary: #03081A;
 $color_accent: #00A3FF;
 $color_btn: linear-gradient(#030A22, #092381);
 $color_title: linear-gradient(#03081A, #091A56);
+$color_grey: #F6F6F6;
 
 //отступы
 $m_section: 3.75rem;
@@ -61,7 +62,7 @@ html, body{
 
 .section_title{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     color: $color_title;
 }
 
