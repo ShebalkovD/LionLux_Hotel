@@ -50,6 +50,14 @@ a {
     background:transparent;
 }
 
+a:active, a:focus, a:hover{
+    -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;

@@ -9,7 +9,7 @@
     z-index: 5;
     width: 100%;
     height: fit-content;
-    padding: 1rem 1rem 1.3rem;
+    padding: 0.5rem 0.5rem 0.7rem;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
@@ -37,30 +37,37 @@
 
         color: $color_secondary;
         text-align: left;
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.4rem;
 
-        margin: 0.5rem 0;
+        margin: 0.1rem 0;
 
         display: flex;
         justify-content: start;
         align-items: center;
+        transition: all 0.2s ease-in-out;
+        &:active{
+            background-color: $color_grey;
+        }
        
        
         img{
             display: block;
-            width: 1.8rem;
+            width: 1.4rem;
             margin-right: 1.5rem;
             flex: 0 0 auto;
         }
         
+        
 
         &:nth-child(5){
             img{
-                width: 2rem;
-                margin-right: 1.1rem;
+                width: 1.6rem;
+                margin-right: 1.3rem;
             }
             
         }

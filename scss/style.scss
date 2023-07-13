@@ -55,6 +55,11 @@
         color: #fff;
         border: 2px solid #fff;
         background-color: transparent;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #fff;
+            color: $color_secondary;
+        }
     }
     
 }
@@ -77,6 +82,7 @@
     display: block;
    
    }
+
   
     
     button{

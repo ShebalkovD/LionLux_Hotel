@@ -3,3 +3,15 @@
         font-size: 14px;
     }
 }
+
+@media (min-width: 767px) {
+    html, body{
+        font-size: 24px;
+    }
+    .mobile_menu{
+        width: 40%;
+    }
+    .services_menu{
+        padding: 0.5rem 4.5rem 1.7rem;
+    }
+}

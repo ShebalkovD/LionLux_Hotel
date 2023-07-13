@@ -52,23 +52,51 @@
     }
     &_list{
         padding: 0.5rem 0;
-        margin-top: 3.25rem;
+        margin-top: 2.25rem;
         display: flex;
         flex-direction: column;
 
         &-item{
             width: 100%;
-            padding: 0.4rem;
-            background-color: $color_grey;
+            padding: 0.5rem;
             border-radius: 0.625rem;
             
             height: fit-content;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
             line-height: normal;
             text-align-last: left;
-            margin-bottom: 1rem;
+            margin-bottom: 0.3rem;
+            transition: all 0.2s ease-in-out;
+            a{
+                display: block;
+                width: 100%;
+                transition: all 0.2s ease-in-out;
+            }
+            &:hover{
+                cursor: pointer;
+               
+            }
+            &:active{
+            background-color: $color_grey;
+            outline: none;
+
+            }
 
         }
+        #catalogBtnMobile{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            path{
+                stroke: $color_secondary;
+                
+            }
+            svg{
+                width: 0.4rem;
+            }
+        }
+        
     }
     
 }

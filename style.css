@@ -50,6 +50,14 @@ a {
   background: transparent;
 }
 
+a:active, a:focus, a:hover {
+  -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
@@ -243,7 +251,7 @@ section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 1rem 1rem 1.3rem;
+  padding: 0.5rem 0.5rem 0.7rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -282,11 +290,13 @@ section {
   border: none;
   color: #03081A;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0.5rem 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  margin: 0.1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,18 +306,24 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.services_menu-item:active {
+  background-color: #fdfafa;
 }
 .services_menu-item img {
   display: block;
-  width: 1.8rem;
+  width: 1.4rem;
   margin-right: 1.5rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
 .services_menu-item:nth-child(5) img {
-  width: 2rem;
-  margin-right: 1.1rem;
+  width: 1.6rem;
+  margin-right: 1.3rem;
 }
 .services_menu-line {
   background-color: #03081A;
@@ -367,7 +383,7 @@ section {
 }
 .mobile_menu_list {
   padding: 0.5rem 0;
-  margin-top: 3.25rem;
+  margin-top: 2.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,17 +394,51 @@ section {
 }
 .mobile_menu_list-item {
   width: 100%;
-  padding: 0.4rem;
-  background-color: #F6F6F6;
+  padding: 0.5rem;
   border-radius: 0.625rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: normal;
   -moz-text-align-last: left;
        text-align-last: left;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.mobile_menu_list-item a {
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.mobile_menu_list-item:hover {
+  cursor: pointer;
+}
+.mobile_menu_list-item:active {
+  background-color: #fdfafa;
+  outline: none;
+}
+.mobile_menu_list #catalogBtnMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile_menu_list #catalogBtnMobile path {
+  stroke: #03081A;
+}
+.mobile_menu_list #catalogBtnMobile svg {
+  width: 0.4rem;
 }
 
 .header {
@@ -455,6 +505,13 @@ section {
   color: #fff;
   border: 2px solid #fff;
   background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header-btn:hover {
+  background-color: #fff;
+  color: #03081A;
 }
 
 .nav {
@@ -735,5 +792,16 @@ section {
 @media (max-width: 320px) {
   html, body {
     font-size: 14px;
+  }
+}
+@media (min-width: 767px) {
+  html, body {
+    font-size: 24px;
+  }
+  .mobile_menu {
+    width: 40%;
+  }
+  .services_menu {
+    padding: 0.5rem 4.5rem 1.7rem;
   }
 }
