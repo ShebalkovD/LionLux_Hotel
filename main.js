@@ -1,6 +1,7 @@
 //Паралакс анимация шапки
 
 const nav = document.querySelector('.nav');
+
 const scrollTrigger = document.querySelector('.scrolltrigger');
 const options={
     rootMargin: "-100px"
@@ -16,6 +17,27 @@ const navObserver = new IntersectionObserver((entries) => {
 }, options)
 
 navObserver.observe(scrollTrigger)
+
+const elToAnimate = document.querySelectorAll('.scroll_animation');
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.toggle('scroll_animation-active');
+            scrollObserver.unobserve(entry.target);
+        }
+    })
+    }, {
+        threshold: 0.8,
+        
+    }
+)
+
+
+
+elToAnimate.forEach(el => {
+    scrollObserver.observe(el);
+})
+
 
 //Меню услуг
 

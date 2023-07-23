@@ -171,12 +171,19 @@
     background-color: #F6F6F6;
     .section_title{
         margin-top: 2rem;
+        
     }
     .section_text{
         margin-top: 1rem;
+       
     }
     .section_title:first-child{
         margin-top: 0;
+        padding-left: 0;
+    }
+    .scroll_animation{
+        margin-top: 2rem;
+        padding-left: 0.5rem;
     }
     .choice_subtitle{
         margin-top: 3rem;
