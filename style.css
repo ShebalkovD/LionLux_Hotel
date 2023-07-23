@@ -160,20 +160,29 @@ html, body {
 }
 
 .container {
-  max-width: 98%;
+  max-width: 95%;
   margin: 0 auto;
   padding: 0 5px;
   position: relative;
 }
 
 .section_title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: linear-gradient(#03081A, #091A56);
+  font-size: 1.75rem;
+  font-weight: 400;
+  background: linear-gradient(107deg, #03081A 0%, #091C5C 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section_text {
+  margin-top: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
 }
 
 section {
-  margin-top: 3.75rem;
+  padding: 3.75rem 0 3.75rem 0;
 }
 
 .scrolltrigger {
@@ -199,7 +208,6 @@ section {
   z-index: 4;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .shadow-active {
@@ -266,7 +274,6 @@ section {
       -ms-transform: translateY(-1rem);
           transform: translateY(-1rem);
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .services_menu-active {
@@ -307,7 +314,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .services_menu-item:active {
@@ -343,7 +349,6 @@ section {
       -ms-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   height: 100vh;
   width: 60%;
@@ -406,14 +411,12 @@ section {
        text-align-last: left;
   margin-bottom: 0.3rem;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .mobile_menu_list-item a {
   display: block;
   width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .mobile_menu_list-item:hover {
@@ -459,7 +462,6 @@ section {
   max-width: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5.73%, #101011), to(rgba(16, 16, 17, 0)));
-  background: -o-linear-gradient(top, #101011 5.73%, rgba(16, 16, 17, 0) 100%);
   background: linear-gradient(180deg, #101011 5.73%, rgba(16, 16, 17, 0) 100%);
 }
 .header::after {
@@ -506,7 +508,6 @@ section {
   border: 2px solid #fff;
   background-color: transparent;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .header-btn:hover {
@@ -521,7 +522,6 @@ section {
   width: 100%;
   z-index: 3;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .nav_wrapper {
@@ -601,12 +601,51 @@ section {
   opacity: 0;
 }
 
+.about {
+  margin: 0;
+  padding: 3.75rem 0 3.75rem 0;
+  background-image: url(/img/marble-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .about-img {
   max-width: 100%;
   margin-top: 1.5rem;
 }
-.about-text {
-  margin-top: 1.5rem;
+.about-img-first {
+  margin-top: 3.75rem;
+}
+
+.comfort-img {
+  max-width: 100%;
+  margin-top: 3.75rem;
+}
+
+.choice {
+  background-color: #F6F6F6;
+}
+.choice .section_title {
+  margin-top: 2rem;
+}
+.choice .section_text {
+  margin-top: 1rem;
+}
+.choice .section_title:first-child {
+  margin-top: 0;
+}
+.choice .choice_subtitle {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: var(--btn-grad, linear-gradient(16deg, #030A22 22.92%, #092381 100%));
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cards_wrapper {
@@ -682,7 +721,6 @@ section {
 }
 
 .footer {
-  margin-top: 3.75rem;
   padding-top: 3.75rem;
   padding-bottom: 1rem;
   background-color: #03081A;
@@ -710,7 +748,7 @@ section {
 }
 .footer_inner_menu-item {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 .footer_info {
@@ -730,7 +768,7 @@ section {
 }
 .footer_info-item {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 .footer_info-item span {

@@ -24,7 +24,7 @@
 $color_secondary: #03081A;
 $color_accent: #00A3FF;
 $color_btn: linear-gradient(#030A22, #092381);
-$color_title: linear-gradient(#03081A, #091A56);
+
 $color_grey: #fdfafa;
 
 //отступы
@@ -54,20 +54,28 @@ html, body{
 }
 
 .container{
-    max-width: 98%;
+    max-width: 95%;
     margin: 0 auto;
     padding: 0 5px;
     position: relative;
 }
 
 .section_title{
-    font-size: 2rem;
-    font-weight: 700;
-    color: $color_title;
+    font-size: 1.75rem;
+    font-weight: 400;
+    background: linear-gradient(107deg, #03081A 0%, #091C5C 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section_text{
+    margin-top: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
 }
 
 section{
-    margin-top: 3.75rem;
+    
+    padding: 3.75rem 0 3.75rem 0;
 }
 
 .scrolltrigger{

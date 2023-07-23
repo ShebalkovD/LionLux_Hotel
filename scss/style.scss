@@ -144,13 +144,53 @@
     }
 }
 .about{
+    margin: 0;
+    padding: 3.75rem 0 3.75rem 0;
+    background-image: url(/img/marble-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &-img{
         max-width: 100%;
         margin-top: 1.5rem;
+        
     }
-    &-text{
-        margin-top: 1.5rem;
+    &-img-first{
+        margin-top: 3.75rem;
     }
+   
+}
+.comfort{
+    
+    &-img{
+        max-width: 100%;
+        margin-top: 3.75rem;
+    }
+}
+.choice{
+    background-color: #F6F6F6;
+    .section_title{
+        margin-top: 2rem;
+    }
+    .section_text{
+        margin-top: 1rem;
+    }
+    .section_title:first-child{
+        margin-top: 0;
+    }
+    .choice_subtitle{
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background: var(--btn-grad, linear-gradient(16deg, #030A22 22.92%, #092381 100%));
+        background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
 }
 .cards{
     &_wrapper{
@@ -219,7 +259,7 @@
 }
 
 .footer{
-    margin-top: 3.75rem;
+    
     padding-top: 3.75rem;
     padding-bottom: 1rem;
     background-color: $color_secondary;
@@ -241,7 +281,7 @@
             text-align: center;
             &-item{
                 margin-top: 1rem;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-weight: 400;
             }
         }
@@ -257,7 +297,7 @@
         text-align: center;
         &-item{
             margin-top: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 300;
             span{
                 font-weight: 400;
