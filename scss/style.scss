@@ -271,85 +271,125 @@
     padding-bottom: 1rem;
     background-color: $color_secondary;
     color: #fff;
-    &_inner{
 
-
-        &-logo{
-            display: block;
-            margin: 0 auto;
-            width: 80%;
-        }
-        &_menu{
-            margin: 0 auto;
-            margin-top: 3rem;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            &-item{
-                margin-top: 1rem;
-                font-size: 1.2rem;
-                font-weight: 400;
-            }
-        }
-        
-        
-    }
-    &_info{
-        margin: 0 auto;
-        margin-top: 3rem;
+    &__list{
         display: flex;
-        justify-content: center;
+        text-align: left;
         flex-direction: column;
-        text-align: center;
+        margin-bottom: 2rem;
         &-item{
-            margin-top: 1rem;
-            font-size: 1.2rem;
             font-weight: 300;
-            span{
-                font-weight: 400;
+            color: #C9C8C8;
+            margin-bottom: 0.5rem;
+            &:first-child{
+                color: #fff;
+                margin-bottom: 1.2rem;
             }
         }
     }
-    &-line{
-        height: 1px;
-        width: 6.25rem;
-        margin: 0 auto;
-        margin-top: 3rem;
-        background-color: #fff;
-    }
+
     &_btn{
         margin: 0 auto;
         margin-top: 3rem;
-        @include btn(19rem, 3.75rem, 0.5rem, 1rem);
+        // @include btn(19rem, 3.75rem, 0.5rem, 1rem);
+        @include btn(14rem, 3rem, 5rem, 0.8rem);
         background-color: #fff;
         max-width: 100%;
         color: $color_secondary;
-        box-shadow: 0px 1px 42px 0px rgba(0, 172, 209, 0.25);
-        font-size: 1.75rem;
+        box-shadow: 0px 2px 42px 0px rgba(0, 172, 209, 0.35);
+        font-size: 1.25rem;
         font-weight: 500;
         text-align: left;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 2.5rem;
+        padding-right: 1.8rem;
         &-img{
-            height: 1.75rem;
-           
+            height: 1.25rem;
+            
         }
+    }
 
-    }
-    &-policy{
-        font-weight: 300;
-        font-size: 0.75rem;
-        display: block;
-        margin: 0 auto;
-        margin-top: 4rem;
-        text-align: center;
-        width: fit-content;
-        opacity: 0.4;
+
+    // &_inner{
+
+
+    //     &-logo{
+    //         display: block;
+    //         margin: 0 auto;
+    //         width: 80%;
+    //     }
+    //     &_menu{
+    //         margin: 0 auto;
+    //         margin-top: 3rem;
+    //         display: flex;
+    //         justify-content: center;
+    //         flex-direction: column;
+    //         text-align: center;
+    //         &-item{
+    //             margin-top: 1rem;
+    //             font-size: 1.2rem;
+    //             font-weight: 400;
+    //         }
+    //     }
         
-    }
+        
+    // }
+    // &_info{
+    //     margin: 0 auto;
+    //     margin-top: 3rem;
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     text-align: center;
+    //     &-item{
+    //         margin-top: 1rem;
+    //         font-size: 1.2rem;
+    //         font-weight: 300;
+    //         span{
+    //             font-weight: 400;
+    //         }
+    //     }
+    // }
+    // &-line{
+    //     height: 1px;
+    //     width: 6.25rem;
+    //     margin: 0 auto;
+    //     margin-top: 3rem;
+    //     background-color: #fff;
+    // }
+    // &_btn{
+    //     margin: 0 auto;
+    //     margin-top: 3rem;
+    //     @include btn(19rem, 3.75rem, 0.5rem, 1rem);
+    //     background-color: #fff;
+    //     max-width: 100%;
+    //     color: $color_secondary;
+    //     box-shadow: 0px 1px 42px 0px rgba(0, 172, 209, 0.25);
+    //     font-size: 1.75rem;
+    //     font-weight: 500;
+    //     text-align: left;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     padding-right: 2.5rem;
+    //     &-img{
+    //         height: 1.75rem;
+           
+    //     }
+
+    // }
+    // &-policy{
+    //     font-weight: 300;
+    //     font-size: 0.75rem;
+    //     display: block;
+    //     margin: 0 auto;
+    //     margin-top: 4rem;
+    //     text-align: center;
+    //     width: fit-content;
+    //     opacity: 0.4;
+        
+    // }
 }
 
 

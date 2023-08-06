@@ -26,8 +26,8 @@ const scrollObserver = new IntersectionObserver((entries) => {
             scrollObserver.unobserve(entry.target);
         }
     })
-    }, {
-        threshold: 0.8,
+    }, {  
+        threshold: 0.2,
         
     }
 )

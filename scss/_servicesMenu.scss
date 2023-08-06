@@ -50,6 +50,9 @@
         justify-content: start;
         align-items: center;
         transition: all 0.2s ease-in-out;
+        p{
+            font-weight: 400;
+        }
         &:nth-child(1){
             max-width: 80%;
         }
