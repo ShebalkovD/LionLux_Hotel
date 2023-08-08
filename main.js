@@ -59,6 +59,8 @@ shadow.onclick = () => {
     menuServices.classList.remove('services_menu-active');
     shadow.classList.remove('shadow-active');
     body.classList.remove('noscroll');
+    mobileSubMenu.classList.remove('mobile_submenu-active');
+    mobileMenu.classList.remove('mobile_menu-catalogmode');
     mobileMenu.classList.remove('mobile_menu-active');
 
 }
@@ -67,18 +69,27 @@ shadow.onclick = () => {
 
 const mobileMenuBtn = document.querySelector("#burger-btn");
 const mobileMenu = document.querySelector(".mobile_menu");
+const mobileSubMenu = document.querySelector(".mobile_submenu");
 const mobileMenuCloseBtn = document.querySelector('.close');
+const catalogBtn = document.querySelector('#catalogBtnMobile');
 
 mobileMenuBtn.onclick = () => {
     mobileMenu.classList.add('mobile_menu-active');
     shadow.classList.add('shadow-active');
     body.classList.add('noscroll');
+    setTimeout(() => {
+        mobileSubMenu.classList.add('mobile_submenu-active');
+    }, 200);
 }
 
-
-
 mobileMenuCloseBtn.onclick = () => {
+    mobileMenu.classList.remove('mobile_menu-catalogmode');
     mobileMenu.classList.remove('mobile_menu-active');
+    mobileSubMenu.classList.remove('mobile_submenu-active');
     shadow.classList.remove('shadow-active');
     body.classList.remove('noscroll');
+}
+
+catalogBtn.onclick = () => {
+    mobileMenu.classList.toggle('mobile_menu-catalogmode');
 }

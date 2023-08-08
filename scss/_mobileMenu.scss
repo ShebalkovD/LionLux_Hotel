@@ -1,9 +1,8 @@
 .mobile_menu{
     position: fixed;
-    top: 1px;
+    top: 0;
     right: 0;
     z-index: 5;
-
     visibility: hidden;
     transform: translateX(100%);
     transition: all 0.2s ease-in-out;
@@ -18,7 +17,17 @@
     &-active{
         visibility: visible;
         transform: translateX(0);
+      
     }
+    &-catalogmode{
+        transform: translateX(-100%);
+        width: 50%;
+        & #catalogBtnMobile{
+            background-color: $color_secondary;
+            color: #fff;
+        }
+    }
+   
 
     &-top{
         height: fit-content;
@@ -99,4 +108,66 @@
         
     }
     
+}
+
+.mobile_submenu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    padding: 0.5rem 0.5rem;
+    background-color: $color_secondary;
+    color: #fff;
+     
+    
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.2s ease-in-out;
+    z-index: 4;
+
+    &-active{
+        
+        transform: translateX(0);
+        visibility: visible;
+    }
+    &-link{
+        @include btn(14rem, 2.5rem, 5rem, 0.8rem);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #fff;
+        width: 100%;
+        color: $color_secondary;
+        box-shadow: 0px 2px 22px 0px rgba(0, 172, 209, 0.25);
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 2.70rem;
+        img{
+            display: block;
+            width: 1.1rem;
+            margin-right: 5%;
+        }
+        span{
+            display: block;
+        }
+    }
+
+    &-item{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.625rem;
+        
+        height: fit-content;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: normal;
+        text-align-last: left;
+        margin-bottom: 0.3rem;
+        transition: all 0.2s ease-in-out;
+    }
 }

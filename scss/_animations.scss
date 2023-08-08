@@ -11,6 +11,16 @@
     }
 }
 
+@keyframes mobileMenuCatalogArrow {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0.5rem);
+    }
+
+}
+
 
 .scroll_animation{
     transform: translate(0, 1rem);
@@ -32,4 +42,5 @@
 .footer_btn.scroll_animation-active{
     transform: translate(0);
 }
+
 
