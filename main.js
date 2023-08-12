@@ -59,8 +59,6 @@ shadow.onclick = () => {
     menuServices.classList.remove('services_menu-active');
     shadow.classList.remove('shadow-active');
     body.classList.remove('noscroll');
-    mobileSubMenu.classList.remove('mobile_submenu-active');
-    mobileMenu.classList.remove('mobile_menu-catalogmode');
     mobileMenu.classList.remove('mobile_menu-active');
 
 }
@@ -72,24 +70,41 @@ const mobileMenu = document.querySelector(".mobile_menu");
 const mobileSubMenu = document.querySelector(".mobile_submenu");
 const mobileMenuCloseBtn = document.querySelector('.close');
 const catalogBtn = document.querySelector('#catalogBtnMobile');
+const catalogCloseBtn = document.querySelector('.mobile_submenu_top-back');
+const catalogSidebarItem = document.querySelectorAll('.mobile_submenu_inner_sidebar-item');
 
 mobileMenuBtn.onclick = () => {
     mobileMenu.classList.add('mobile_menu-active');
     shadow.classList.add('shadow-active');
     body.classList.add('noscroll');
-    setTimeout(() => {
-        mobileSubMenu.classList.add('mobile_submenu-active');
-    }, 200);
+    
 }
 
 mobileMenuCloseBtn.onclick = () => {
     mobileMenu.classList.remove('mobile_menu-catalogmode');
     mobileMenu.classList.remove('mobile_menu-active');
-    mobileSubMenu.classList.remove('mobile_submenu-active');
+   
     shadow.classList.remove('shadow-active');
     body.classList.remove('noscroll');
 }
 
 catalogBtn.onclick = () => {
-    mobileMenu.classList.toggle('mobile_menu-catalogmode');
+    mobileSubMenu.classList.add('mobile_submenu-active');
 }
+
+catalogCloseBtn.onclick = () => {
+    mobileSubMenu.classList.remove('mobile_submenu-active');
+}
+
+catalogSidebarItem.forEach(el => {
+    el.onclick = () => {
+        catalogSidebarItem.forEach(el => {
+            if(el.classList.contains('mobile_submenu_inner_sidebar-item-active')){
+                el.classList.remove('mobile_submenu_inner_sidebar-item-active') 
+            }
+        })
+        el.classList.add('mobile_submenu_inner_sidebar-item-active');
+        
+    }
+})
+
