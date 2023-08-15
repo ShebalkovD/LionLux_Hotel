@@ -155,6 +155,11 @@ html, body {
   color: #03081A;
 }
 
+header {
+  padding-top: 6rem;
+  min-height: 1rem;
+}
+
 .noscroll {
   overflow: hidden;
 }
@@ -174,6 +179,9 @@ html, body {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.section_title-bold {
+  font-weight: 700;
 }
 
 .section_text {
@@ -215,6 +223,43 @@ section {
 .shadow-active {
   visibility: visible;
   opacity: 1;
+}
+
+.main_btn {
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  width: 14rem;
+  height: 3rem;
+  border-radius: 5rem;
+  padding: 0.8rem;
+  color: #fff;
+  max-width: 100%;
+  background-color: #03081A;
+  -webkit-box-shadow: 0px 2px 42px 0px rgba(0, 172, 209, 0.35);
+          box-shadow: 0px 2px 42px 0px rgba(0, 172, 209, 0.35);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1.8rem;
+  border: none;
+  outline: none;
+}
+.main_btn:hover {
+  border: none;
+}
+.main_btn-img {
+  height: 1.25rem;
 }
 
 @-webkit-keyframes headerArrow {
@@ -290,6 +335,18 @@ section {
 }
 
 .footer_btn.scroll_animation-active {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+.contacts_btn.scroll_animation {
+  -webkit-transform: translate(-3rem, 0);
+      -ms-transform: translate(-3rem, 0);
+          transform: translate(-3rem, 0);
+}
+
+.contacts_btn.scroll_animation-active {
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
@@ -677,6 +734,72 @@ section {
   height: 100%;
 }
 
+.contacts {
+  margin-top: 2.5rem;
+  padding-left: 2rem;
+}
+.contacts_btn {
+  margin-top: 1rem;
+  margin-bottom: 3.75rem;
+}
+.contacts_item {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.contacts_item-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.contacts_item-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+.contacts_item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.05rem;
+  left: -2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.contacts_item:nth-child(1)::before {
+  background-image: url(img/location.svg);
+}
+.contacts_item:nth-child(2)::before {
+  background-image: url(img/clock.svg);
+}
+.contacts_item:nth-child(3)::before {
+  background-image: url(img/phone.svg);
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.contacts_item:nth-child(4)::before {
+  background-image: url(img/email.svg);
+}
+.contacts_socials {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+.contacts_socials-item {
+  margin-right: 1rem;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.contacts_socials-item img {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .header {
   min-height: 100vh;
   background-image: url("img/header-bg.png");
@@ -835,6 +958,10 @@ section {
 }
 .nav-light .nav-phone::after {
   opacity: 0;
+}
+
+.main {
+  min-height: 100vh;
 }
 
 .about {

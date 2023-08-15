@@ -1,0 +1,65 @@
+.contacts{
+    margin-top: 2.5rem;
+    padding-left: 2rem;
+    &_btn{
+        margin-top: 1rem;
+        margin-bottom: 3.75rem;
+    }
+    &_item{
+        margin-bottom: 1rem;
+        position: relative;
+        &-title{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        &-text{
+            font-size: 1.125rem;
+            font-weight: 400;
+            margin-top: 0.2rem;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0.05rem;
+            left: -2rem;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        &:nth-child(1)::before{
+            background-image: url(img/location.svg);
+        }
+        &:nth-child(2)::before{
+            background-image: url(img/clock.svg);
+        }
+        &:nth-child(3)::before{
+            background-image: url(img/phone.svg);
+            width: 1.125rem;
+            height: 1.125rem;
+        }
+        &:nth-child(4)::before{
+            background-image: url(img/email.svg);
+        }
+    }
+    &_socials{
+        margin-top: 1.5rem;
+        display: flex;
+        margin-bottom: 2.5rem;
+        &-item{
+            margin-right: 1rem;
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            img{
+                display: block;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+}

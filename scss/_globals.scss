@@ -49,6 +49,11 @@ html, body{
     line-height: normal;
     color: $color_secondary;
 }
+
+header{
+    padding-top: 6rem;
+    min-height: 1rem;
+}
 .noscroll{
     overflow: hidden;
 }
@@ -66,6 +71,9 @@ html, body{
     background: linear-gradient(107deg, #03081A 0%, #091C5C 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    &-bold{
+        font-weight: 700;
+    }
 }
 .section_text{
     margin-top: 1.5rem;
@@ -104,6 +112,30 @@ section{
         opacity: 1;
     }
     
+}
+
+.main_btn{
+    @include btn(14rem, 3rem, 5rem, 0.8rem);
+    color: #fff;
+    max-width: 100%;
+    background-color: $color_secondary;
+    box-shadow: 0px 2px 42px 0px rgba(0, 172, 209, 0.35);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.8rem;
+    border: none;
+    outline: none;
+    &:hover{
+        border: none;
+    }
+    &-img{
+        height: 1.25rem;
+        
+    }
 }
 
 

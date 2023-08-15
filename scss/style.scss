@@ -3,6 +3,7 @@
 @import "_animations.scss";//анимации
 @import "_servicesMenu.scss"; // меню услуг
 @import "_mobileMenu.scss"; // Мобильное меню
+@import "_contacts.scss"; // Страница контактов
 
 
 .header{
@@ -142,6 +143,9 @@
             opacity: 0;
         }
     }
+}
+.main{
+    min-height: 100vh;
 }
 .about{
     margin: 0;
